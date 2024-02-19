@@ -1,0 +1,39 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #458ff6; /* Replace with your preferred background color code */
+}
+
+.navbar {
+    background-color: transparent; /* Semi-transparent white background */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #458ff6;
+}
+
+.card {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color: rgba(245, 244, 244, 0.527); /* Semi-transparent white background for card */
+    backdrop-filter: blur(5px); /* Apply a 5px blur effect */
+}
+
+img {
+    max-width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.blur-effect {
+    filter: blur(5px); /* Adjust the blur intensity as needed */
+}

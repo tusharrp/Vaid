@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Services & Category</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Vaid</a>
+          <h2>Your Path to Seamless Healthcare</h2>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-success" type="button" onclick="applySearchEffect()">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="cards-container">
+        <!-- Repeat the following card section for each of your 32 cards -->
+        <div class="card" id="Doctor for home visit">
+            <img src="https://static.vecteezy.com/system/resources/previews/003/766/142/non_2x/doctor-home-visit-flat-design-long-shadow-glyph-icon-home-building-with-therapist-inside-silhouette-illustration-vector.jpg" alt="Card Image">
+            <h5>Doctor for home visit</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Booking and  Tokens">
+            <img src="https://th.bing.com/th/id/OIP.rVNSrMJl4z9NDZ18QUdnrwHaHa?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Booking and  Tokens</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Diagnosies">
+            <img src="https://www.svgrepo.com/download/307188/x-ray-medicine-diagnose-diagnosis.svg" alt="Card Image">
+            <h5>Diagnosies</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Internship">
+            <img src="https://cdn1.vectorstock.com/i/thumb-large/01/90/internship-black-glyph-icon-vector-33390190.jpg" alt="Card Image">
+            <h5>Internship</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Equipment Procurement">
+            <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/procurement-1658324-1407078.png" alt="Card Image">
+            <h5>Equipment Procurement</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="AR/VR Healthcare">
+            <img src="https://th.bing.com/th/id/OIP.tvtJt4y_-GgaU7TqwRzChQAAAA?pid=ImgDet&w=166&h=174&c=7&dpr=1.3" alt="Card Image">
+            <h5>AR/VR Healthcare</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Ambulance Booking">
+            <img src="https://th.bing.com/th/id/OIP.2TdqAetgHkwORcAKaQUtjQHaHa?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Ambulance Booking</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Video consultation">
+            <img src="https://th.bing.com/th/id/OIP.p1xqmLr9cLC7EYNubAF0UAHaHZ?pid=ImgDet&w=166&h=166&c=7&dpr=1.3" alt="Card Image">
+            <h5>Video consultation</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Patient History card">
+            <img src="https://th.bing.com/th/id/OIP.BIWzyZ1Uv8UWrIk19cSKTwHaHa?w=800&h=800&rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Patient History card</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Donation Interface">
+            <img src="https://www.svgrepo.com/download/19283/make-a-donation.svg" alt="Card Image">
+            <h5>Donation Interface</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Meal Ordering">
+            <img src="https://www.svgrepo.com/show/482261/meal-menu-2.svg" alt="Card Image">
+            <h5>Meal Ordering</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Patient status qo">
+            <img src="https://www.svgrepo.com/download/19600/patient.svg" alt="Card Image">
+            <h5>Patient status qo</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Prescription Transfer">
+            <img src="https://th.bing.com/th/id/R.df51a736ed29b4ff110ad1cbe49befc2?rik=rHiEOniYzR3%2bDQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_493006.png&ehk=TvHS6oyexEmQXuSOx%2bWUAZ8XkV7ucJfEnV8Jhg3osAo%3d&risl=&pid=ImgRaw&r=0" alt="Card Image">
+            <h5>Prescription Transfer</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Personal Nutrition and Fitness">
+            <img src="https://www.svgrepo.com/show/399592/nutrition.svg" alt="Card Image">
+            <h5>Personal Nutrition and Fitness</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Cost Estimation">
+            <img src="https://www.svgrepo.com/show/307738/cost-benefit-analysis-cost-benefir-assessment-unlock-value.svg" alt="Card Image">
+            <h5>Cost Estimation</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Medical Tourism visit india">
+            <img src="https://pbs.twimg.com/profile_images/2189067878/gr-med-icon_-_01_400x400.jpg" alt="Card Image">
+            <h5>Medical Tourism visit india</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Ayurveda">
+            <img src="https://www.shutterstock.com/image-vector/ayurveda-black-glyph-icon-ayurvedic-260nw-1768229900.jpg" alt="Card Image">
+            <h5>Ayurveda</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Stop Drugs and abuse">
+            <img src="https://th.bing.com/th/id/OIP.98aPfT5Dp0feTI1Bj1PzRwHaHa?w=512&h=512&rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Stop Drugs and abuse</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Meditation Aid">
+            <img src="https://th.bing.com/th/id/OIP.RnZYi9A-V-2JTOwqTqs1PQHaIe?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Meditation Aid</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Doctor Vacancies">
+            <img src="https://th.bing.com/th/id/OIP.0BhOkLyJ1IkU7mhb0hwl-AHaIW?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Doctor Vacancies</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Medical News">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/02/77/event-newspaper-icon-simple-web-page-vector-43560277.jpg" alt="Card Image">
+            <h5>Medical News</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Doctor Search">
+            <img src="https://cdn1.iconfinder.com/data/icons/medical-vol-3-5/80/72-512.png" alt="Card Image">
+            <h5>Doctor Search</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Stock Management">
+            <img src="https://icon-library.com/images/inventory-icon/inventory-icon-8.jpg" alt="Card Image">
+            <h5>Stock Management</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Appointment Scheduling">
+            <img src="https://th.bing.com/th/id/OIP.LNpUHXSMnn0YzTnLrU2stgHaG_?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Appointment Scheduling</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Cost Estimation">
+            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/cost-estimation-3160064-2628403.png" alt="Card Image">
+            <h5>Cost Estimation</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Lifetime History card">
+            <img src="https://th.bing.com/th/id/OIP.mQxzh51rlnDG2nI_nWnrRAHaHa?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Lifetime History card</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Account Stats">
+            <img src="https://th.bing.com/th/id/OIP.fEPxisMwgFetqTRSvj74vAHaHa?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Account Stats</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Donation of body parts">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/380/340/original/organ-donation-black-glyph-icon-living-and-deceased-body-parts-offer-healthy-tissues-transplantation-donated-kidney-silhouette-symbol-on-white-space-solid-pictogram-isolated-illustration-vector.jpg" alt="Card Image">
+            <h5>Donation of body parts</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Raise requirement of blood and organs">
+            <img src="https://th.bing.com/th/id/OIP.lUVoLmlXzh-rWuTqcQh3IgHaFj?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Raise requirement of blood and organs</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Loan and finance">
+            <img src="https://th.bing.com/th/id/R.b641d6e9764f17846d90b765538d5a09?rik=gSCLdvAC17KhxQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_187930.png&ehk=TNN9eNRoNye%2bHiDXQRran8xQr0Czi35igWZauVvrfVA%3d&risl=&pid=ImgRaw&r=0" alt="Card Image">
+            <h5>Loan and finance</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+        <div class="card" id="Health care policies">
+            <img src="https://th.bing.com/th/id/OIP.pEdS72ELBvs5yv-pDBOBigHaIx?rs=1&pid=ImgDetMain" alt="Card Image">
+            <h5>Health care policies</h5>
+            <!-- Add any additional content for your card here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
