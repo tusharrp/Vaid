@@ -1,34 +1,29 @@
-// Your JavaScript (script.js) file
-$(document).ready(function () {
-    // Custom jQuery expression for case-insensitive :contains
-    $.expr[":"].contains = $.expr.createPseudo(function (arg) {
-        return function (elem) {
-            return $(elem).text().toLowerCase().indexOf(arg.toLowerCase()) >= 0;
-        };
-    });
+ // Function to filter cards based on the search input
+ function applySearchEffect() {
+    // Get the input value from the search field
+    var searchInput = document.getElementById('searchInput').value.toLowerCase();
 
-    // Apply blur effect to cards that don't match the search term
-    function applySearchEffect() {
-        var searchTerm = $('#searchInput').val().toLowerCase();
+    // Get all card elements
+    var cards = document.getElementsByClassName('card');
 
-        // Remove blur effect from all cards
-        $('.card').removeClass('blur-effect');
-
-        // Apply blur effect to cards that don't match the search term
-        $('.card:not(:contains("' + searchTerm + '"))').addClass('blur-effect');
-    }
-
-    // Handle click events outside the search area and cards
-    $(document).on('click', function (event) {
-        if (!$(event.target).closest('.navbar, .cards-container').length) {
-            // Clicked outside the search area and cards, remove blur effect
-            $('.card').removeClass('blur-effect');
+    // Check if the search input is empty
+    if (searchInput === '') {
+        // If empty, show all cards
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].style.display = 'block';
         }
-    });
+    } else {
+        // If not empty, filter and display cards based on the search input
+        for (var i = 0; i < cards.length; i++) {
+            var cardId = cards[i].id.toLowerCase();
+            if (cardId.includes(searchInput)) {
+                cards[i].style.display = 'block';
+            } else {
+                cards[i].style.display = 'none';
+            }
+        }
+    }
+}
 
-    // Handle click events on the search button
-    $('#searchButton').on('click', function () {
-        // Apply blur effect based on the search term
-        applySearchEffect();
-    });
-});
+// Attach the applySearchEffect function to the input event on the search input field
+document.getElementById('searchInput').addEventListener('input', applySearchEffect);
