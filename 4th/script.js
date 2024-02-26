@@ -1,4 +1,10 @@
- // Function to filter cards based on the search input
+
+function goBack() {
+    // JavaScript to go back
+    window.history.back();
+}
+
+// Function to filter cards based on the search input
  function applySearchEffect() {
     // Get the input value from the search field
     var searchInput = document.getElementById('searchInput').value.toLowerCase();
