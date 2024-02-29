@@ -1,0 +1,278 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', sans-serif;
+}
+
+.custom-navbar {
+    background-color: #34495e; /* Green color */
+    color: #fff; /* White text color */
+    
+}
+
+.custom-navbar a {
+    color: #fff; /* White text color for links */
+}
+
+.custom-navbar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+}
+
+.custom-navbar form {
+    margin-left: auto; /* Move the search form to the right */
+}
+
+.custom-navbar input[type="search"] {
+    width: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #fff; /* White input background color */
+    color: #34495e; /* Green text color */
+    border: 1px solid #2c3e50; /* Green border color */
+}
+
+.custom-navbar button {
+    background-color: #fff; /* White button background color */
+    color: #34495e; /* Green text color */
+    border: 1px solid #2c3e50; /* Green border color */
+}
+
+.services-shape{
+    position: absolute;
+    z-index: -1;
+    top: 290px;
+    left: -70px;
+}
+
+.element-one{
+    position: absolute;
+    top: calc(56px + 41px + 63px);
+    left: 0;
+}
+.element-one img{
+    width: 60px;
+}
+
+.element-two{
+    position: absolute;
+    bottom: calc(56px + 41px + 63px);
+    left: 0;
+}
+.element-two img{
+    width: 60px;
+}
+
+.element-three{
+    position: absolute;
+    top: calc(56px + 41px + 63px);
+    right: 0;
+}
+.element-three img{
+    width: 60px;
+}
+
+.element-four{
+    position: absolute;
+    bottom: calc(56px + 41px + 63px);
+    right: 0;
+}
+.element-four img{
+    width: 60px;
+}
+
+.element-five{
+    position: absolute;
+    top: calc(230px + 230px + 230px);
+    right: 750px;
+}
+.element-five img{
+    width: 60px;
+}
+
+.element-six{
+    position: absolute;
+    bottom: calc(213px + 213px + 213px);
+    right: 750px;
+}
+.element-six img{
+    width: 60px;
+}
+
+.custom-card-container {
+    width: 60%; /* Set the width of the card container to 60% */
+    margin: auto; /* Center the card container */
+    padding-top: 50px; /* Add some top padding for spacing */
+  }
+
+  .custom-card {
+    margin: 20px; /* Add some margin between cards */
+    background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+    border: 1px solid #ced4da; /* Add a border for a cleaner look */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+  }
+
+  .custom-card:hover {
+    transform: scale(1.05); /* Scale up the card slightly on hover */
+  }
+
+  .custom-card img {
+    max-height: 150px; /* Set max height for the card image */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-top-left-radius: 10px; /* Add border radius only to the top corners of the image */
+    border-top-right-radius: 10px;
+  }
+
+  .custom-card-body {
+    padding: 15px; /* Add padding to the card body */
+  }
+
+  .card-title {
+    font-size: 1.5rem; /* Increase font size for the card title */
+    margin-bottom: 10px; /* Add some margin below the title */
+  }
+
+  .card-text {
+    font-size: 1rem; /* Set font size for the card text */
+  }
+
+  .text-body-secondary {
+    color: #6c757d; /* Set a muted color for the secondary text */
+  }
+
+.page-content {
+    margin-left: 270px; /* Increase the margin to add space between filter section and card content */
+    padding-top: 56px;
+}
+
+.articles-shape{
+    position: absolute;
+    right: 0;
+    top: 1500px;
+    z-index: -1;
+}
+
+/* Your existing CSS */
+
+.filter-section {
+    position: absolute;
+    top: 56px; /* Height of the navbar */
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: 100vh; /* Set the height to cover the entire viewport height */
+    background-color: #2c3e50; /* Dark background color */
+    padding: 20px;
+    z-index: 1; /* Set a higher z-index to make sure it appears above the cards */
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3); /* Add a box shadow for a border effect */
+    color: #ecf0f1; /* Light text color */
+}
+
+.filter-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db; /* Highlight color */
+    margin-bottom: 20px;
+}
+
+.filter-option {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ecf0f1; /* Light text color */
+}
+
+select,
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    background-color: #34495e; /* Dark input background color */
+    border: 1px solid #2c3e50; /* Dark border color */
+    color: #ecf0f1; /* Light text color */
+}
+
+#priceRangeValue {
+    display: block;
+    margin-top: 8px;
+    color: #bdc3c7; /* Light text color */
+}
+
+/* Style for checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #34495e; /* Color of the thumb */
+    border-radius: 10px; /* Roundness of the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2980b9; /* Darker color on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ecf0f1; /* Color of the track */
+}
+
+/* Handle when grabbed */
+::-webkit-scrollbar-thumb:active {
+    background-color: #2c3e50; /* Darker color when clicked */
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .filter-section {
+        width: 100%; /* Make the filter section full width on small screens */
+        position: static; /* Remove fixed position on small screens */
+        top: 0;
+        box-shadow: none; /* Remove box shadow on small screens */
+    }
+
+    .page-content {
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+
+    .custom-card-container {
+        width: 100%; /* Make the card container full width on small screens */
+        padding: 20px; /* Add padding for spacing on small screens */
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .filter-section {
+        width: 250px; /* Restore the original width on medium screens */
+    }
+
+    .page-content {
+        margin-left: 250px; /* Adjust left margin on medium screens */
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+    .filter-section {
+        width: 250px; /* Restore the original width on large screens */
+    }
+
+    .page-content {
+        margin-left: 270px; /* Restore the original left margin on large screens */
+    }
+}

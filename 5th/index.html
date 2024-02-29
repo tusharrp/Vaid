@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Intrenship</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+</head>
+<body>
+    <nav class="navbar custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../3rd/index.html">Vaid</a>
+          <h2>INTRENSHIP FOR FRESHER</h2>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn" type="button" onclick="goBack()">Back</button>
+          </form>
+        </div>
+    </nav>
+
+    <div class="filter-section">
+      <h3 class="filter-heading">Internship Filters</h3>
+
+      <!-- Position Filter -->
+      <div class="filter-option">
+          <label>Position:</label>
+          <select id="positionFilter">
+              <option value="all">All Positions</option>
+              <option value="medicalIntern">Medical Intern</option>
+              <option value="nurseIntern">Nurse Intern</option>
+              <option value="pharmacyIntern">Pharmacy Intern</option>
+              <!-- Add more positions as needed -->
+          </select>
+      </div>
+
+      <!-- Department Filter -->
+      <div class="filter-option">
+          <label>Department:</label>
+          <select id="departmentFilter">
+              <option value="all">All Departments</option>
+              <option value="medical">Medical</option>
+              <option value="nursing">Nursing</option>
+              <option value="pharmacy">Pharmacy</option>
+              <!-- Add more departments as needed -->
+          </select>
+      </div>
+
+      <!-- Location Filter -->
+      <div class="filter-option">
+          <label>Location:</label>
+          <select id="locationFilter">
+              <option value="all">All Locations</option>
+              <option value="hospitalA">Hospital A</option>
+              <option value="hospitalB">Hospital B</option>
+              <option value="clinicX">Clinic X</option>
+              <!-- Add more locations as needed -->
+          </select>
+      </div>
+
+      <!-- Duration Filter -->
+      <div class="filter-option">
+          <label>Duration:</label>
+          <select id="durationFilter">
+              <option value="all">All Durations</option>
+              <option value="shortTerm">Short Term</option>
+              <option value="mediumTerm">Medium Term</option>
+              <option value="longTerm">Long Term</option>
+              <!-- Add more duration options as needed -->
+          </select>
+      </div>
+
+      <!-- Add more filter options as needed -->
+
+  </div>
+    <div class="page-content">
+      <div class="element-one">
+          <img src = "../material/element-img-1.png" alt = "">
+      </div>
+      <div class="element-two">
+          <img src = "../material/element-img-1.png" alt = "">
+      </div>
+      <div class="element-three">
+          <img src = "../material/element-img-1.png" alt = "">
+      </div>
+      <div class="element-four">
+          <img src = "../material/element-img-1.png" alt = "">
+      </div>
+      <div class="element-five">
+          <img src = "../material/element-img-1.png" alt = "">
+      </div>
+      <div class="element-six">
+          <img src = "../material/element-img-1.png" alt = "">
+      </div>
+      <div class = "services-shape">
+        <img src = "../material/curve-shape-1.png" alt = "">
+      </div>
+      <div class = "articles-shape">
+        <img src = "../material/curve-shape-2.png" alt = "">
+      </div>
+      <div class="custom-card-container">
+          <!-- First Card -->
+          <div class="card custom-card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder Image">
+            <div class="card-body custom-card-body">
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">This is a card with some supporting text. Customize it as needed.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        
+          <!-- Second Card -->
+          <div class="card custom-card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder Image">
+            <div class="card-body custom-card-body">
+              <h5 class="card-title">Card Title 2</h5>
+              <p class="card-text">Another card with different content. Customize it as needed.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
+            </div>
+          </div>    
+        
+          <!-- Third Card -->
+          <div class="card custom-card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder Image">
+            <div class="card-body custom-card-body">
+                <h5 class="card-title">Card Title 3</h5>
+                <p class="card-text">A new card with more content. Customize it as needed.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 10 mins ago</small></p>
+            </div>
+          </div>
+
+          <!-- Fourth Card -->
+          <div class="card custom-card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder Image">
+              <div class="card-body custom-card-body">
+                  <h5 class="card-title">Card Title 4</h5>
+                  <p class="card-text">Yet another card for your webpage. Customize it as needed.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 15 mins ago</small></p>
+              </div>
+          </div>
+
+          <!-- Fifth Card -->
+          <div class="card custom-card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder Image">
+              <div class="card-body custom-card-body">
+                  <h5 class="card-title">Card Title 5</h5>
+                  <p class="card-text">Adding more cards for variety. Customize it as needed.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 20 mins ago</small></p>
+              </div>
+          </div>
+
+          <!-- Sixth Card -->
+          <div class="card custom-card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder Image">
+              <div class="card-body custom-card-body">
+                  <h5 class="card-title">Card Title 6</h5>
+                  <p class="card-text">The last card in this example. Customize it as needed.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 25 mins ago</small></p>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
